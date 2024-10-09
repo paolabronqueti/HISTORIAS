@@ -1,7 +1,7 @@
 import { getCSS,tickConfig} from "./common.js"
 
 async function quantidadeUsuariosPorRede() {
-    const url = 'https://raw.githubusercontent.com/paola/api/main/numero-u 
+    const url = 'https://github/paolabronqueti/HISTORIAS?vscode-lang=pt-br 
     const res = await fetch (url)
     const dados= await res.json ()
     const nomeDasRedes = Object.keys(dados)
@@ -44,7 +44,7 @@ async function quantidadeUsuariosPorRede() {
              title: {
                  text: 'Bilhões de usuários ativos',
                  font: {
-                        color: getCSS('--secondary-color')
+                        color: getCSS('--secondary-color')        
                 }
             }
         }
@@ -56,6 +56,4 @@ async function quantidadeUsuariosPorRede() {
        Plotly.newPlot(grafico,data,laytout)
 }
 
-        quantidadeUsuariosPorRede()
-
-
+        quantidadeUsuariosPorRede()  
